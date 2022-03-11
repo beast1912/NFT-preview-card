@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin: 1.05rem 0;
+}
+
+p {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+img {
+  max-width: 100%;
+}
+
+span {
+  color: hsl(0, 0%, 100%);
+}
+
+h2:hover,
+span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  margin: 0.5rem 0;
+}
+.card {
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.25rem;
+  margin: 25px 18px;
+  border-radius: 12px;
+}
+
+.images {
+  position: relative;
+}
+
+.main-image {
+  border-radius: 8px;
+}
+
+.eye {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%);
+  width: 100%;
+  height: calc(100% - 4px);
+  z-index: 1;
+  opacity: 0;
+  border-radius: 8px;
+}
+
+.eye:hover {
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.eye-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contents {
+  margin: 2px;
+}
+
+.contents p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+li img {
+  margin-right: 4px;
+}
+ul > :first-child {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+ul > :last-child {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  margin-top: 1.05rem;
+}
+.avatar img {
+  width: 10%;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 12px;
+}
+
+@media only screen and (min-width: 400px) {
+  .card {
+    width: 400px;
+    margin: 1.05rem auto 0;
+  }
+}
